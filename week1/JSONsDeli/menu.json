@@ -1,69 +1,75 @@
 {
     "Menu": [
         {
-           "Appetizers" : {
-               "Breadsticks": {
-                    "Ingredients": ["cheese", "garlic", "flour", "butter", "salt", "parmesan", "olive oil", "yeast", "sugar"],
-                    "Description": "Hot breadsticks with garlic salt."
-            },
-                "Cheesecurds": {
-                    "Ingredients": ["italian bread", "balsamic vinaigrette", "baby spinach", "sliced deli ham", "hard-boiled eggs", "bacon", "gorgonzola cheese", "cherry tomatoes"],
-                    "Description": "Fresh squeeky cheese curds."
-            }
-           }
-
+        "appetizers" : [
+                {
+                    "name": "Breadsticks",
+                    "Ingredients" : ["cheese", "garlic", "flour", "butter", "salt", "parmesan", "olive oil", "yeast", "sugar"],
+                    "Description" : "Hot breadsticks with garlic salt."
+                },
+                {
+                    "name" : "Cheesecurds",
+                    "Ingredients" : ["italian bread", "balsamic vinaigrette", "baby spinach", "sliced deli ham", "hard-boiled eggs", "bacon", "gorgonzola cheese", "cherry tomatoes"],
+                    "Description" : "Fresh squeeky cheese curds."
+                }
+            ]
         },
+        
         {
-            "Cold Sandwiches" : {
-                "Cranberry-Walnut Chicken Salad Sandwich": {
+            "cold sandwiches" : [
+                {
+                    "name" : "Cranberry-Walnut Chicken Salad Sandwich",
                     "Ingredients": ["pumpernickel bread", "mayonnaise", "honey dijon mustard", "pepper", "rotisserie chicken", "swiss cheese", "celery", "walnuts", "parsley", "lettuce"],
                     "Description": "Tangy cranberries, crunchy celery and juicy chicken." 
                 },
-                "Cobb Salad Sub": {
+                {
+                    "name" : "Cobb Salad Sub",
                     "Ingredients": ["italian bread", "balsamic vinaigrette", "baby spinach", "sliced deli ham", "hard-boiled eggs", "bacon", "gorgonzola cheese", "cherry tomatoes"],
                     "Description": "Very healthy Cobb Salad Sub."
                 }
-            }
- 
-         },
-         {
-            "Hot Sandwiches" : {
-                "Grilled Cheese": {
-                     "Ingredients": ["wheat bread", "cheddar cheese", "butter", "olive oil"],
-                     "Description": "Classic, cheesy, delicious."
-             },
-                 "Meatball Sub": {
-                     "Ingredients": ["italian bread", "marinara sauce", "garlic butter", "mozzarella cheese", "ground beef", "bread crumbs", "eggs", "italian seasoning", "onion powder", "salt", "pepper"],
-                     "Description": "Hot and saucy Italian meatball sub."
-             }
-            }
- 
-         },
-         {
-            "Desserts" : {
-                "Tiramisu": {
-                     "Ingredients": ["mascarpone", "whipping cream", "chocolate", "eggs", "coffee", "cookie", "ladyfingers", "sugar"],
-                     "Description": "Sweet, mouthwatering Tiramisu."
-             },
-                 "Chocolote-Covered Strawberries": {
-                     "Ingredients": ["fresh strawberries", "chocolate"],
-                     "Description": "Delightful and refreshing chocolate-covered strawberries."
-             }
-            }
- 
-         },
-         {
-            "Drinks" : {
-                "Italian Soda": {
-                     "ingredients": ["carbonated water", "your choice of flavored syrup", "cream"],
-                     "description": "Refreshing Italian soda with your choice of flavoring."
-             },
-                 "Coffee": {
-                     "Ingredients": ["Columbian coffee", "your choice of cream, sugar, and/or flavor syrups"],
-                     "Description": "Energizing coffee iced or hot."
-             }
-            }
- 
-         }
+            ]
+        },
+        {
+            "hot sandwiches" : [
+                {
+                    "name" : "Grilled Cheese",
+                    "Ingredients": ["wheat bread", "cheddar cheese", "butter", "olive oil"],
+                    "Description": "Classic, cheesy, delicious."
+                }, 
+                {
+                    "name" : "Meatball Sub",
+                    "Ingredients": ["italian bread", "marinara sauce", "garlic butter", "mozzarella cheese", "ground beef", "bread crumbs", "eggs", "italian seasoning", "onion powder", "salt", "pepper"],
+                    "Description": "Hot and saucy Italian meatball sub."
+                }
+            ]
+        },
+        {
+            "desserts" : [
+                {
+                    "name" : "Tiramisu",
+                    "ingredients": ["mascarpone", "whipping cream", "chocolate", "eggs", "coffee", "cookie", "ladyfingers", "sugar"],
+                    "description": "Sweet, mouthwatering Tiramisu."
+                },
+                {
+                    "name" : "Chocolote-Covered Strawberries",
+                    "ingredients": ["fresh strawberries", "chocolate"],
+                    "description": "Delightful and refreshing chocolate-covered strawberries."
+                }
+            ]
+        },
+        {
+            "drinks" : [
+                {
+                    "name" : "Italian Soda",
+                    "ingredients": ["carbonated water", "your choice of flavored syrup", "cream"],
+                    "description": "Refreshing Italian soda with your choice of flavoring."
+                },
+                {
+                    "name" : "Coffee",
+                    "ingredients" : ["Columbian coffee", "your choice of cream, sugar, and/or flavor syrups"],
+                    "description" : "Energizing coffee iced or hot."
+                }
+            ]
+        }
     ]
 }
