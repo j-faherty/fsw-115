@@ -1,9 +1,20 @@
-body {
+body, p {
     color: #740001;
     background-color: #D3A625;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h1 {
+    text-align: center;
+}
 
+#characters {
+    margin: 0;
+}
+
+ul li {
+    line-height: 2;
+}
 
 
 /*

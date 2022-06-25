@@ -10309,10 +10309,47 @@ var harryPotterCharacters = [
     }
 ]
 
-var harryPotterList = document.getElementById("harryPotterCharacters")
+var harryPotterList = document.getElementById("characters");
 
 for (var i = 0; i < harryPotterCharacters.length; i++) {
-    var newName = document.createElement('li')
-    newName.textContent = harryPotterCharacters[i]
-    harryPotterCharacters.append(newName)
+    harryPotterList.innerHTML += "<li>" + "Name: " + harryPotterCharacters[i].name + ", " + "Alternate Names: " + harryPotterCharacters[i].alternate_names + ", " 
+    + "Species: " + harryPotterCharacters[i].species + ", " + "Gender: " + harryPotterCharacters[i].gender + ", " + "House: " + harryPotterCharacters[i].house +  ", " 
+    + "Birthday: " + harryPotterCharacters[i].dateOfBirth + ", " + "Birth Year: " + harryPotterCharacters[i].yearOfBirth + ", " + "Is a Wizard: " + harryPotterCharacters[i].wizard + ", " 
+    + "Ancestry: " + harryPotterCharacters[i].ancestry + ", " + "Eye Color: " + harryPotterCharacters[i].eyeColour + ", " + "Hair Color: " + harryPotterCharacters[i].hairColour + ", " 
+    + "Wand Wood: " + harryPotterCharacters[i].wand.wood + ", " + "Wand Core: " + harryPotterCharacters[i].wand.core + ", " + "Wand Length: " + harryPotterCharacters[i].wand.length + ", " 
+    + "Patronus: " + harryPotterCharacters[i].patronus + ", " + "Is Hogwarts Student: " + harryPotterCharacters[i].hogwartsStudent + ", " + "Is Hogwarts Staff: " + harryPotterCharacters[i].hogwartsStaff + ", " 
+    + "Actor: " + harryPotterCharacters[i].actor + ", " + "Alternate Actors: " + harryPotterCharacters[i].alternate_actors + ", " + "Is Alive: " + harryPotterCharacters[i].alive + ", " 
+    + "Image: " + harryPotterCharacters[i].image + "</li>"
 }
+
+/*for (var i = 0; i < harryPotterCharacters.length; i++) {
+    var newCharacter = document.createElement("li")
+    newCharacter.textContent = harryPotterCharacters[i]
+    harryPotterList.append(newCharacter)
+}*/
+
+
+
+/*console.log(characters.name)
+
+let nameElement = document.createElement('h2')
+nameElement.textContent = characters.name
+document.body.appendChild(nameElement)
+
+console.log(characters.house)
+
+let houseElement = document.createElement('p')
+houseElement.textContent = characters.house
+document.body.appendChild(houseElement)
+
+console.log(characters.ancestry)
+
+let ancestryElement = document.createElement('p')
+ancestryElement.textContent = characters.ancestry
+document.body.appendChild(ancestryElement)
+
+console.log(characters.actor)
+
+let actorElement = document.createElement('p')
+actorElement.textContent = characters.actor
+document.body.appendChild(actorElement)*/
