@@ -8,7 +8,7 @@
 
 const xhr = new XMLHttpRequest()
          // Method   // URL                    // Async?
-xhr.open("GET", "https://swapi.dev/api/people/1", true)
+xhr.open("GET", "https://swapi.dev/api/people", true)
 xhr.send()
 
 xhr.onreadystatechange = function(){
@@ -16,8 +16,8 @@ xhr.onreadystatechange = function(){
         console.log(xhr.responseText)
         let data = JSON.parse(xhr.responseText)
         //console.log(data) /*moved console.log(data) to below showData function*/
-        console.log(data.results)
-        //showData(data.results)
+        //console.log(data.results)
+        showData(data.results)
     } else if(xhr.readyState === 4 && xhr.status !== 200)
         console.log(xhr.responseText)
 }
@@ -34,7 +34,9 @@ xhr.onreadystatechange = function(){
 
 function showData(data){
     console.log(data)
-    const character = document.createElement('h1')
-    character.textContent = data.name
-    document.appendChild(character)
+    for(let i = 0; i < data.length; i++){
+        const character = document.createElement('h1')
+        character.textContent = data[i].name
+        document.body.appendChild(character)
+    }
 }
